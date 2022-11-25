@@ -1,4 +1,5 @@
-// Define the compiler version you would be using
+// SPDX-License-Identifier: MIT
+///Define the compiler version you would be using
 pragma solidity ^0.8.10;
 
 // Start by creating a contract named Variables
@@ -37,11 +38,11 @@ contract Variables {
     int public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
 
-    function doSomething() public {
+    function doSomething() public view {
         /*
         ******** Local variable **********
         */
-        uint ui = 456;
+        // uint ui = 456;
 
         /*
         ******** Global variables **********
@@ -51,7 +52,7 @@ contract Variables {
             block.timestamp tells us whats the timestamp for the current block
             msg.sender tells us which address called the doSomething function
         */
-        uint timestamp = block.timestamp; // Current block timestamp
-        address sender = msg.sender; // address of the caller
+        // uint timestamp = block.timestamp; // Current block timestamp
+        // address sender = msg.sender; // address of the caller
     }
 }
