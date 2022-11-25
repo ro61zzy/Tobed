@@ -44,6 +44,7 @@ contract Conditions {
             return 2;
         }
     }
+    //solidity is soliditying
 
     /*
         Name of the function is loop.
